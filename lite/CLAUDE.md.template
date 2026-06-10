@@ -1,0 +1,27 @@
+# Project Memory — <PROJECT_NAME>
+
+> Rename to `CLAUDE.md` in your project root. Claude Code loads it every session.
+> Keep it short and current.
+
+## What this is
+<One sentence: what the product does and for whom.>
+
+## Stack
+- Framework: <e.g. Next.js 15, TypeScript>
+- DB: <e.g. Postgres / Supabase>
+- Deploy: <e.g. Vercel>
+
+## Commands
+- Dev: `<npm run dev>`
+- Test: `<npm test>`
+- Build: `<npm run build>`
+
+## Conventions
+- <e.g. one component per file, PascalCase.>
+- <e.g. no `any`.>
+
+## Do NOT
+- <e.g. never commit to `main` directly.>
+
+## Current focus
+<What you're building this week. The highest-value line — keep it updated.>

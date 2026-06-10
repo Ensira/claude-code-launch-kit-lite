@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code Launch Kit — Setup for Solo Builders</title>
+<meta name="description" content="A practical Claude Code setup: 6 hooks, 7 skills, and a ship-a-SaaS workflow. Free Lite version + the full kit.">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --border:#2a3139; --text:#e6edf3;
+    --muted:#9aa7b3; --accent:#6e8bff; --accent2:#8b5cf6; --ok:#3fb950;
+    --maxw:920px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  a{color:var(--accent);text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  .hero{padding:72px 0 48px;text-align:center;
+    background:radial-gradient(1200px 400px at 50% -10%,rgba(110,139,255,.18),transparent)}
+  .hero h1{font-size:2.4rem;line-height:1.15;margin:0 0 14px}
+  .hero p{font-size:1.2rem;color:var(--muted);max-width:680px;margin:0 auto 28px}
+  .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:600}
+  .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
+  .btn-ghost{border:1px solid var(--border);color:var(--text)}
+  section{padding:44px 0;border-top:1px solid var(--border)}
+  h2{font-size:1.5rem;margin:0 0 20px}
+  .grid{display:grid;gap:16px}
+  .bullets{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:18px}
+  .card b{color:var(--text)}
+  .price{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .tier{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:24px;text-align:center}
+  .tier.featured{border-color:var(--accent)}
+  .tier .amt{font-size:2rem;font-weight:800;margin:6px 0}
+  .tier ul{list-style:none;padding:0;margin:14px 0 20px;color:var(--muted);font-size:.95rem}
+  .tier li{padding:4px 0}
+  .faq details{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:600}
+  .refund{color:var(--muted);font-size:.92rem;text-align:center}
+  footer{padding:32px 0;color:var(--muted);font-size:.88rem;text-align:center;border-top:1px solid var(--border)}
+  .tag{display:inline-block;font-size:.75rem;color:var(--ok);border:1px solid var(--ok);border-radius:999px;padding:2px 10px;margin-bottom:14px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="tag">v1.0.0 · Lite free on GitHub</span>
+    <h1>Stop configuring Claude Code.<br>Start shipping.</h1>
+    <p>An opinionated Claude Code setup for solo builders — 6 self-running hooks, 7 skills,
+       and a ship-a-SaaS workflow. Copy it in, fill three blanks, build.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="#pricing">Get the kit</a>
+      <a class="btn btn-ghost" href="https://github.com/Ensira/claude-code-launch-kit-lite">Start with Lite, free</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>What it saves you</h2>
+    <div class="grid bullets">
+      <div class="card"><b>Skip the setup hour.</b><br>A ready allowlist + 6 hooks: no "Allow?" clicks, no secrets in commits, no red builds reaching <code>push</code>.</div>
+      <div class="card"><b>A workflow that ends in "shipped."</b><br>The ship-saas skill runs empty repo → paid → deployed → one channel, with a done-check per phase.</div>
+      <div class="card"><b>Scope discipline built in.</b><br>scope-cut, plan-first, and self-review keep a weekend project a weekend project.</div>
+      <div class="card"><b>Selling isn't an afterthought.</b><br>launch-prep, pricing-experiment, and distribution-sprint cover the part most builders avoid.</div>
+      <div class="card"><b>See it work first.</b><br>A worked example (LinkSnip: ~2 days to a paid MVP) and a free Lite version — try before you pay.</div>
+    </div>
+    <!-- Add screenshots/01-cover etc. here once captured (see screenshots/README.md). -->
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2>Pricing</h2>
+    <div class="grid price">
+      <div class="tier">
+        <h3>Lite</h3>
+        <div class="amt">Free</div>
+        <ul><li>2 hooks · 2 skills</li><li>CLAUDE.md template</li><li>On GitHub</li></ul>
+        <a class="btn btn-ghost" href="https://github.com/Ensira/claude-code-launch-kit-lite">Get Lite</a>
+      </div>
+      <div class="tier featured">
+        <h3>Standard</h3>
+        <div class="amt">€29</div>
+        <ul><li>6 hooks · 7 skills</li><li>The full workflow</li><li>+ docs</li></ul>
+        <a class="btn btn-primary" href="https://payhip.com/b/U7fSt">Get Standard</a>
+      </div>
+      <div class="tier">
+        <h3>Pro</h3>
+        <div class="amt">€49</div>
+        <ul><li>Everything in Standard</li><li>+ 2 starters</li><li>+ worked example + launch assets</li></ul>
+        <a class="btn btn-primary" href="https://payhip.com/b/l5AtI">Get Pro</a>
+      </div>
+    </div>
+    <p class="refund" style="margin-top:18px">One seat per developer · unlimited projects · free updates within v1.x</p>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2>FAQ</h2>
+    <details><summary>What exactly do I get?</summary><p>A copy-in Claude Code setup: a permission allowlist, hooks, and skills, plus (tier-dependent) starters, a worked example, and launch/pricing/distribution playbooks.</p></details>
+    <details><summary>What's the difference between the tiers?</summary><p>Lite (free) = 2 hooks, 2 skills, the template. Standard = all 6 hooks + 7 skills. Pro = Standard + 2 starters + the worked example + launch assets.</p></details>
+    <details><summary>Do I need to be an expert?</summary><p>No. Follow the 15-minute setup doc. Defaults work; you trim to your stack.</p></details>
+    <details><summary>Which stacks does it support?</summary><p>Stack-agnostic. The format hook ships commands for JS/TS, Python, Go, Rust, and Java; starters are Next.js and Node CLI.</p></details>
+    <details><summary>Will it break when Claude Code updates?</summary><p>Config may need small tweaks over time. Updates within the v1.x line are included free.</p></details>
+    <details><summary>Can I use it for client and commercial work?</summary><p>Yes — unlimited projects, personal or commercial. You may not resell or redistribute the kit itself. One seat per developer.</p></details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="refund"><b>14-day refund.</b> If the kit isn't a fit for your workflow, reply to your purchase receipt within 14 days and we'll refund it — no explanation required.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Claude Code Launch Kit · <a href="https://github.com/Ensira/claude-code-launch-kit-lite">GitHub</a> · Not affiliated with Anthropic.
+  </div>
+</footer>
+
+</body>
+</html>
